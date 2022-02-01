@@ -13,10 +13,10 @@ async function getName() {
 };
 
 async function addCurrencies() {
-    const tokens = Number(prompt('How many tokens do you want to add to your account? (1000 daily)'));
+    const tokens = Number(prompt('How many tokens do you want to add to your account? (10000 daily)'));
 
-    if (tokens > 1000) {
-        alert('You can only add up to 1000 tokens daily.');
+    if (tokens > 10000) {
+        alert('You can only add up to 10000 tokens daily.');
     };
 
     const response = await fetch('https://api.blooket.com/api/users/add-rewards', {
